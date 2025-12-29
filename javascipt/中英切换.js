@@ -117,7 +117,7 @@ const translations = {
         'variety.description11':'柴犬性情温顺,忠实,有服从性、忍耐,朴实而雅致,灵巧机敏,英勇大胆、亲切而富有感情,这些特点共同产生一种独特的天性。',
         'variety.variety12':'雪纳瑞犬',
         'variety.description12':'雪纳瑞犬凭借稳定性格、精力充沛、活泼可爱的特点成为了人们热衷饲养的对象。',
-        'all.footer':'版权所有',
+        'all.footer':'版权归汪组所有',
         'function.back':'返回',
         'lang.zh': '中文',
         'lang.en': 'English'
@@ -240,7 +240,7 @@ const translations = {
         'variety.description11':'Gentle, faithful, obedient, patient, elegant, alert, brave, and affectionate.',
         'variety.variety12':'Schnauzer',
         'variety.description12':'Popular for its stable temperament, high energy, and lively, lovely nature.',
-        'all.footer':'All rights reserved',
+        'all.footer':'Copyright © Wang Group',
         'function.back':'back',
         'lang.zh': '中文',
         'lang.en': 'English'
