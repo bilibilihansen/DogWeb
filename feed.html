@@ -12,34 +12,50 @@
         <div id="title">
             <div id="logo">
                 <img src="./images/logo.png" alt="">
-                <p>宠物狗网</p>
+                <p data-i18n="welcome.name">宠物狗网</p>
+                <div class="language-switcher">
+                    <button class="lang-btn" id="langToggle" data-current-lang="zh">
+                        <span class="lang-text">中文</span>
+                        <span class="lang-flag">🇨🇳</span>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button class="lang-option" data-lang="zh">
+                            <span class="lang-flag">🇨🇳</span>
+                            <span class="lang-text">中文</span>
+                        </button>
+                        <button class="lang-option" data-lang="en">
+                            <span class="lang-flag">🇺🇸</span>
+                            <span class="lang-text">English</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <p class="huanying">
+            <p class="huanying" data-i18n="welcome.title">
                 欢迎访问我们网站！
             </p>
         </div>
         <div id="nav">
             <ul>
                 <li>
-                    <a href="./index.html">网站首页</a>
+                    <a href="./index.html" data-i18n="nav.index">网站首页</a>
                 </li>
                 <li>
-                    <a href="./variety.html">常见品种</a>
+                    <a href="./variety.html" data-i18n="nav.variety">常见品种</a>
                 </li>
                 <li>
-                    <a href="./habit.html">生活习性</a>
+                    <a href="./habit.html" data-i18n="nav.habit">生活习性</a>
                 </li>
                 <li>
-                    <a href="./train.html">基本训练</a>
+                    <a href="./train.html" data-i18n="nav.train">基本训练</a>
                 </li>
                 <li>
-                    <a href="./feed.html">饲养要点</a>
+                    <a href="./feed.html" data-i18n="nav.feed">饲养要点</a>
                 </li>
                 <li>
-                    <a href="./disease.html">疾病防治</a>
+                    <a href="./disease.html" data-i18n="nav.disease">疾病防治</a>
                 </li>
                 <li>
-                    <a href="./message.html">给我留言</a>
+                    <a href="./message.html" data-i18n="nav.message">给我留言</a>
                 </li>
             </ul>
         </div>
@@ -47,14 +63,14 @@
             <img src="./images/banner2.png" alt="">
         </div>
         <div id="feed">
-            <h1>
+            <h1 data-i18n="feed.title">
                 饲养要点
             </h1>
-            <span>
+            <span data-i18n="feed.select">
                 挑选宠物狗
             </span>
             <img class="dog1" src="./images/dog1.png" alt="">
-            <p>
+            <p data-i18n="feed.pointer">
                 挑选宠物狗主要考虑三点，一是挑自己最喜欢的品种。宠物狗的品种繁多，外貌也千姿百态。讨人喜欢的很多，但限于财力、精力不可能养很多条，因此要挑选自己最喜欢的品种个体，这样收养后与其朝夕相伴才能精心照料，
                 “两情相悦”。二是挑适合自己饲养的品种。宠物狗有很多种分类方法，按体形大小可分为大型、中型、小型和极小型，体高 61cm 以上体重 40 kg以上属大型，很多大型宠物狗体高超过 1 m ，体重超过 100
                 kg；体高 40.7～61
@@ -63,25 +79,25 @@
                 “回头率”很高，但很多人不具备饲养大型宠物狗的条件，因此要挑适合自己饲养的品种。三是挑健康的个体。健康的狗活泼好动，看起来很精神，眼睛很亮，眼结膜呈粉红色，无分泌物，不流泪；鼻端湿凉无黏液，无异常分泌物；口腔无异味，舌鲜红无舌苔，牙齿洁白，没有闭合不全现象，不流涎；毛色新鲜，皮毛温而不热，蓬松整洁，无脱毛，没有虱虫；肛门紧缩，周围清洁无异物。此外，尽量挑经过调教的狗或
                 3 周龄左右的狗，这样的狗便于以后调教训练。
             </p>
-            <span>
+            <span data-i18n="feed.preparation">
                 准备宠物狗的用具
             </span>
-            <p>
+            <p data-i18n="feed.prepare">
                 饲养宠物狗要准备一些必需用具，如狗舍、食盆、食盘、水碗、刷子、梳子、剃刀、电吹风等，还可准备一些宠物狗的玩具。这些用具可以到宠物店挑选购买，也可利用自家的一些闲置物件自己改造制作。
             </p>
-            <span>
+            <span data-i18n="feed.licenser">
                 给宠物狗“领证”
             </span>
-            <p>
+            <p data-i18n="feed.license">
                 饲养宠物狗应按政府有关部门的规定办证，一般流程是养狗人先到当地派出所领取申请养狗登记表，按要求填实内容，粘贴狗狗照片、狗主照片，到辖区派出所、公安局逐级审核，或到辖区政府一站式服务大厅办理。
             </p>
-            <span>
+            <span data-i18n="feed.feed">
                 宠物狗的饮食
             </span>
-            <p>
+            <p data-i18n="feed.feeder">
                 宠物狗的饮食原则是定时、定量、定质、定次、定点、定温。
             </p>
-            <p>
+            <p data-i18n="feed.description">
                 定时就是根据宠物狗的饮食需求兼顾自己的时间选定饲喂时间，饲喂时间一旦确定，每天均定时饲喂，不能随意变化，这样宠物狗就能建起条件反射。定量就是控制宠物狗的食量，不饥不饱为宜，相当于人的七分饱或八分饱，不能忽多忽少，不能暴饮暴食。定质就是保证宠物狗的饮食质量，包括清洁的饮水、安全的食物、营养平衡等。宠物的食物主要分为
                 2 种，一种是购买专业的狗粮，一种是吃人的剩菜剩饭，2
                 种食物均可，需要注意的是不能饲喂霉变的食物，不能饲喂朱古力、洋葱、蒜头、鸡骨牛骨、猪骨、虾蟹等食物，不能饲喂生的或未完全煮熟的食物，不能饲喂油腻的食物，不能长期饲喂甜味或刺激性的食物，一旦食物中毒，不能用盐刺激催吐。定次就是固定宠物狗每天的饮食次数，成年狗每天早晚各喂一次即可。幼年狗的次数可多
@@ -89,10 +105,10 @@
             </p>
         </div>
         <div id="footer">
-            <p>版权所有</p>
+            <p data-i18n="all.footer">版权所有</p>
         </div>
     </div>
-
+    <script src="./javascipt/中英切换.js"></script>
 </body>
 
 </html>

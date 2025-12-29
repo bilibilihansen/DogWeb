@@ -12,64 +12,87 @@
         <div id="title">
             <div id="logo">
                 <img src="./images/logo.png" alt="">
-                <p>宠物狗网</p>
+                <p data-i18n="welcome.name">宠物狗网</p>
+                <div class="language-switcher">
+                    <button class="lang-btn" id="langToggle" data-current-lang="zh">
+                        <span class="lang-text">中文</span>
+                        <span class="lang-flag">🇨🇳</span>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button class="lang-option" data-lang="zh">
+                            <span class="lang-flag">🇨🇳</span>
+                            <span class="lang-text">中文</span>
+                        </button>
+                        <button class="lang-option" data-lang="en">
+                            <span class="lang-flag">🇺🇸</span>
+                            <span class="lang-text">English</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <p class="huanying">
+            <p class="huanying" data-i18n="welcome.title">
                 欢迎访问我们网站！
             </p>
         </div>
         <div id="nav">
             <ul>
                 <li>
-                    <a href="./index.html">网站首页</a>
+                    <a href="./index.html" data-i18n="nav.index">网站首页</a>
                 </li>
                 <li>
-                    <a href="./variety.html">常见品种</a>
+                    <a href="./variety.html" data-i18n="nav.variety">常见品种</a>
                 </li>
                 <li>
-                    <a href="./habit.html">生活习性</a>
+                    <a href="./habit.html" data-i18n="nav.habit">生活习性</a>
                 </li>
                 <li>
-                    <a href="./train.html">基本训练</a>
+                    <a href="./train.html" data-i18n="nav.train">基本训练</a>
                 </li>
                 <li>
-                    <a href="./feed.html">饲养要点</a>
+                    <a href="./feed.html" data-i18n="nav.feed">饲养要点</a>
                 </li>
                 <li>
-                    <a href="./disease.html">疾病防治</a>
+                    <a href="./disease.html" data-i18n="nav.disease">疾病防治</a>
                 </li>
                 <li>
-                    <a href="./message.html">给我留言</a>
+                    <a href="./message.html" data-i18n="nav.message">给我留言</a>
                 </li>
             </ul>
         </div>
         <div id="banner">
-            <img src="images\bixiongwangye.png" alt="">
+            <img src="images\bixiong1.jpg" alt="">
         </div>
         <div id="disease">
             <h1>
-                比熊
+                <button class="fanhui"><a href="./index.html" data-i18n="function.back">返回</a></button>
+                <div class="voice">
+                    <span data-i18n="variety.3">比熊</span>
+                    <button class="audio-btn" onclick="toggleAudio(this)" data-audio="/audio/bixiong.mp3">
+                        <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.518 6.21a1.058 1.058 0 011.41.129.89.89 0 01.23.59V19.07l-.006.095c-.05.468-.473.834-.993.834l-.168-.013a1.107 1.107 0 01-.321-.1l-.142-.085-3.79-3.423H6.043l-.103-.005c-.472-.044-.848-.391-.896-.828l-.005-.096v-4.642c0-.513.45-.93 1.004-.93h2.563l3.912-3.667zM9.356 10.68l-.316.296H6.136v4.306H9.16l.313.283 3.586 3.24v-11.6l-3.704 3.475zm7.155-1.174c.228-.2.57-.172.765.061.745.894 1.12 1.991 1.12 3.269l-.005.235a6.075 6.075 0 01-1.082 3.255l-.072.085a.535.535 0 01-.589.107l-.095-.055a.566.566 0 01-.135-.775c.52-.764.812-1.583.877-2.468l.014-.384c0-1.019-.286-1.86-.858-2.545a.567.567 0 01.06-.785zm2.273 0c.228-.2.57-.172.766.061.745.894 1.119 1.991 1.119 3.269l-.005.235a6.075 6.075 0 01-1.082 3.255l-.071.085a.534.534 0 01-.59.107l-.095-.055a.566.566 0 01-.135-.775c.521-.764.813-1.583.877-2.468l.014-.384c0-1.019-.285-1.86-.857-2.545a.567.567 0 01.06-.785z" fill= #6E4031> 
+                            </path>
+                        </svg>
+                    </button>
+                </div>
             </h1>
-            <p>
+            <p data-i18n="variety3.description1">
                 比熊犬（英文名：Bichon
                 Frise）是起源于地中海地区的一种小型犬品种，也称“卷毛比熊犬”“坦纳利佛犬”等。比熊犬身高在24～30厘米，体重多在3～6千克；眼睛圆，黑色或深褐色，目光柔和，总有一种好奇而机敏的神情；毛发多为卷曲的白色毛发，底层毛发柔软而且非常的浓密，外层毛发多为粗毛，微微卷曲，成年犬有超过10%的其他颜色的杂毛。16世纪被引入到法国，并进行了一系列的培育工作，于1932年建立了该犬的品种标准，国际犬业联合会承认比熊犬是法国和比利时的品种。
-                [5]
                 比熊犬性情开朗、活泼、感情丰富，有较强的适应能力。它忠实于主人，温和而守规矩。愉快的态度是这个品种最突出的特点，能给主人带来无穷的乐趣。但是，该犬对居住环境的要求很高，经常需要有人陪伴，需要每日梳理，定期进行专业修剪，日常养护占用时间较多，没有充裕的时间是不适合养比熊犬的。
-                [5-6]
 
             </p>
-            <p>
+            <p data-i18n="variety3.description2">
                 比熊犬起源于长毛犬和斑毛犬，因此得名“卷毛比熊犬”，后来简称为“比熊犬”（也有称为“比雄犬”）；也有资料显示可能是巴比特犬（亦称巴尔勃犬）和水猎融犬的后裔。法语为Bichon
                 Frisé，意指“白色卷毛的玩赏用小狗”。比熊犬是极为古老的犬种之一，尽管对于它的起源仍有许多争议，但大家都一致认为这种白色卷毛的小狗，其祖先早在公元前就存在（起源于地中海地区）。有的历史学家认为：比熊犬是玛尔济斯犬的后代，玛尔济斯犬则来自地中海的马尔它岛，是绒毛犬品种的后代。另有些历史学家认为：比熊犬是由长毛垂耳猎犬这种小型狮子狗和另一种小型狗配种而来。比熊犬和玛尔济斯犬外形尽管有着较大差异，但的确有着共同的血缘—两者均源自于公元前600年至公元前300年间的地中海存在的犬种。此外，比熊犬与生长在低湿沼泽地带的须猎犬有血缘关系。
-                [2] [5] [7]
                 比熊犬曾分4类：即马尔他比熊犬、波隆那比熊犬、比熊哈瓦拉犬和比熊特纳利夫犬
             </p>
         </div>
         <div id="footer">
-            <p>版权所有</p>
+            <p data-i18n="all.footer">版权所有</p>
         </div>
     </div>
-
+    <script src="./javascipt/播放音频.js"></script>
+    <script src="./javascipt/中英切换.js"></script>
 </body>
 
 </html>

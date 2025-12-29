@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>欢迎来到宠物网</title>
+    <title>宠物狗网</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -12,34 +12,50 @@
         <div id="title">
             <div id="logo">
                 <img src="./images/logo.png" alt="">
-                <p>宠物狗网</p>
+                <p data-i18n="welcome.name">宠物狗网</p>
+                <div class="language-switcher">
+                    <button class="lang-btn" id="langToggle" data-current-lang="zh">
+                        <span class="lang-text">中文</span>
+                        <span class="lang-flag">🇨🇳</span>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button class="lang-option" data-lang="zh">
+                            <span class="lang-flag">🇨🇳</span>
+                            <span class="lang-text">中文</span>
+                        </button>
+                        <button class="lang-option" data-lang="en">
+                            <span class="lang-flag">🇺🇸</span>
+                            <span class="lang-text">English</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <p class="huanying">
+            <p class="huanying" data-i18n="welcome.title">
                 欢迎访问我们网站！
             </p>
         </div>
         <div id="nav">
             <ul>
                 <li>
-                    <a href="./index.html">网站首页</a>
+                    <a href="./index.html" data-i18n="nav.index">网站首页</a>
                 </li>
                 <li>
-                    <a href="./variety.html">常见品种</a>
+                    <a href="./variety.html" data-i18n="nav.variety">常见品种</a>
                 </li>
                 <li>
-                    <a href="./habit.html">生活习性</a>
+                    <a href="./habit.html" data-i18n="nav.habit">生活习性</a>
                 </li>
                 <li>
-                    <a href="./train.html">基本训练</a>
+                    <a href="./train.html" data-i18n="nav.train">基本训练</a>
                 </li>
                 <li>
-                    <a href="./feed.html">饲养要点</a>
+                    <a href="./feed.html" data-i18n="nav.feed">饲养要点</a>
                 </li>
                 <li>
-                    <a href="./disease.html">疾病防治</a>
+                    <a href="./disease.html" data-i18n="nav.disease">疾病防治</a>
                 </li>
                 <li>
-                    <a href="./message.html">给我留言</a>
+                    <a href="./message.html" data-i18n="nav.message">给我留言</a>
                 </li>
             </ul>
         </div>
@@ -48,45 +64,49 @@
         </div>
         <div id="jianjie">
             <img src="./images/jianjie1.jpg" alt="">
-            <p>
+            <p data-i18n="index.title">
                 宠物狗是人们为了消除孤寂或出于娱乐目的而豢养的犬类动物，或者出于非经济目的而豢养的犬类。狗是一种有灵性的动物，已被人类驯化了几千年，其嗅觉灵敏，动作敏捷，善解人意，忠于主人。在很多国家，各种体形优美的狗早已成为最受喜爱的家庭宠物。
                 比较著名的宠物狗有：中华田园犬、哈士奇、京巴、藏獒、松狮、金毛、德国牧羊犬、雪纳瑞、大麦町犬、博美犬、吉娃娃、苏格兰牧羊犬、萨摩耶、可卡、拉布拉多、比熊、贵宾犬、马尔济斯、比利时猎犬、泰迪熊犬、边境牧羊犬、阿拉斯加，猎狐梗等等。
             </p>
         </div>
         <div id="pinzhong">
-            <h2><span>常见品种</span></h2>
+            <h2><span data-i18n="index.variety">常见品种</span></h2>
             <ul>
                 <li>
                     <a href="./a1.html">
                         <img src="./images/jinmao.png" alt="">
-                        <p>金毛</p>
+                        <p data-i18n="index.jinmao">金毛</p>
                     </a>
                 </li>
                 <li>
                     <a href="a2.html">
                         <img src="./images/hashiqi.png" alt="">
-                        <p>哈士奇</p>
+                        <p data-i18n="index.hashiqi">哈士奇</p>
                     </a>
                 </li>
                 <li>
                     <a href="a3.html">
                         <img src="./images/bixiong.png" alt="">
-                        <p>比熊</p>
+                        <p data-i18n="index.bixiong">比熊</p>
                     </a>
                 </li>
                 <li>
-                    <img src="./images/bomei.png" alt="">
-                    <p>博美</p>
+                    <a href="a4.html">
+                        <img src="./images/bomei.png" alt="">
+                        <p data-i18n="index.bomei">博美</p>
+                    </a>
                 </li>
                 <li>
-                    <img src="./images/muyangquan.png" alt="">
-                    <p>牧羊犬</p>
+                    <a href="a5.html">
+                        <img src="./images/muyangquan.png" alt="">
+                        <p data-i18n="index.muyangquan">牧羊犬</p>
+                    </a>
                 </li>
             </ul>
         </div>
         <div id="pinzhong">
-            <h2><span>饲养好处</span></h2>
-            <p class="haochu">
+            <h2><span data-i18n="index.benefit">饲养好处</span></h2>
+            <p class="haochu" data-i18n="index.description">
                 在这个高速度的压力山大的社会中，想要减轻自己的压力，从而提高自己的工作效率的话，建议您不妨试试养宠物狗狗，它会给你带来很多的乐趣，有的还会达到治疗疾病的效果，当然也是因人而异，当你把宠物狗狗视为自己最亲密的朋友的时候，你就会有这种感觉。对于一些子女在外，家里没有人相伴的孤单老人，可以喂养宠物狗狗，因为这样可以使你的生活更加的充实，解除生活的孤寂感。让自己的小孩子饲养动物，可以培养他的责任感、和要对动物有爱心。当自家的宠物狗狗与你有了很多年感情之后，你会把它当做亲人看待，舍不得它，宠物狗狗可以促进人与人之间更好的交流与沟通。
             </p>
         </div>
@@ -94,21 +114,21 @@
             <div id="more">
                 <img src="./images/xixing.jpg" alt="">
                 <p>
-                    <a href="./habit.html">生活习性</a>
+                    <a href="./habit.html" data-i18n="index.habit">生活习性</a>
                 </p>
             </div>
             <div id="more" class="more2">
                 <img src="./images/jibing.jpg" alt="">
                 <p>
-                    <a href="./disease.html">疾病防治</a>
+                    <a href="./disease.html" data-i18n="index.disease">疾病防治</a>
                 </p>
             </div>
         </div>
         <div id="footer">
-            <p>版权所有</p>
+            <p data-i18n="all.footer">版权所有</p>
         </div>
     </div>
-
+    <script src="./javascipt/中英切换.js"></script>
 </body>
 
 </html>

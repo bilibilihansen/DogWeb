@@ -29,6 +29,90 @@ html {
     color: #FFFFFF;
 }
 
+.language-switcher {
+    position: relative;
+    display: inline-block;
+    left:20px;
+}
+
+.lang-btn {
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    gap: 8px;
+    background-color: #be8f7a;
+    border: 1px solid #be8f7a;
+    border-radius: 4px;
+    padding: 6px 12px;
+    color: #C4BBAC;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space:nowrap;
+    width:auto;
+    height:auto;
+    line-height:normal;
+    text-align:left;
+}
+
+.lang-btn:hover {
+    background-color: #6E4031;
+    border-color: #be8f7a;
+}
+
+.lang-btn span{
+    display:inline-block;
+    align-items:center;
+    vertical-align:middle;
+}
+
+.lang-dropdown {
+    position:absolute;
+    top: 100%;
+    right: 0;
+    background-color: #be8f7a;
+    border: 1px solid #be8f7a;
+    border-radius: 4px;
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(-10px);
+    transition:all 0.3s ease;
+    overflow: hidden;
+}
+
+.language-switcher:hover .lang-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.language-switcher:hover .lang-btn {
+    background-color: #6E4031;
+    border-color: #be8f7a;
+}
+
+.lang-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 8px 12px;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    color: #C4BBAC;
+    transition: background-color 0.2s;
+    white-space:nowrap;
+}
+
+.lang-option:last-child {
+    border-bottom: none;
+}
+
+.lang-option:hover {
+    background-color: #6E4031;
+}
+
 #title img {
     height: 40px;
     float: left;
@@ -339,6 +423,11 @@ h3 {
     border-radius: 10px;
 }
 
+#disease h1{
+    width:100%;
+    height:60px;
+}
+
 #disease p {
     line-height: 30px;
     text-indent: 2rem;
@@ -384,11 +473,49 @@ textarea {
 }
 
 button {
-    width: 120px;
+    width: 60px;
     height: 24px;
     border: 0px;
     background-color: #6E4031;
     color: #fff;
+    border-radius:6px;
+}
+
+button a{
+    width: 60px;
+    height: 24px;
+    border: 0px;
+    background-color: #6E4031;
+    color: #fff;
+    border-radius:6px;
+}
+
+.fanhui{
+    float:right;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.voice button{
+    width:26px;
+    height:26px;
+    margin-top:17px;
+    margin-bottom: 17px;
+    background-color: #fff;
+    float:left;
+}
+
+.voice button svg:hover{
+    color:#fff;
+}
+
+.voice span{
+    float:left;
+}
+
+.voice button img{
+    width:36px;
+    height:36px;
 }
 
 .liuytan {

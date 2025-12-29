@@ -12,34 +12,50 @@
         <div id="title">
             <div id="logo">
                 <img src="./images/logo.png" alt="">
-                <p>宠物狗网</p>
+                <p data-i18n="welcome.name">宠物狗网</p>
+                <div class="language-switcher">
+                    <button class="lang-btn" id="langToggle" data-current-lang="zh">
+                        <span class="lang-text">中文</span>
+                        <span class="lang-flag">🇨🇳</span>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button class="lang-option" data-lang="zh">
+                            <span class="lang-flag">🇨🇳</span>
+                            <span class="lang-text">中文</span>
+                        </button>
+                        <button class="lang-option" data-lang="en">
+                            <span class="lang-flag">🇺🇸</span>
+                            <span class="lang-text">English</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <p class="huanying">
+            <p class="huanying" data-i18n="welcome.title">
                 欢迎访问我们网站！
             </p>
         </div>
         <div id="nav">
             <ul>
                 <li>
-                    <a href="./index.html">网站首页</a>
+                    <a href="./index.html" data-i18n="nav.index">网站首页</a>
                 </li>
                 <li>
-                    <a href="./variety.html">常见品种</a>
+                    <a href="./variety.html" data-i18n="nav.variety">常见品种</a>
                 </li>
                 <li>
-                    <a href="./habit.html">生活习性</a>
+                    <a href="./habit.html" data-i18n="nav.habit">生活习性</a>
                 </li>
                 <li>
-                    <a href="./train.html">基本训练</a>
+                    <a href="./train.html" data-i18n="nav.train">基本训练</a>
                 </li>
                 <li>
-                    <a href="./feed.html">饲养要点</a>
+                    <a href="./feed.html" data-i18n="nav.feed">饲养要点</a>
                 </li>
                 <li>
-                    <a href="./disease.html">疾病防治</a>
+                    <a href="./disease.html" data-i18n="nav.disease">疾病防治</a>
                 </li>
                 <li>
-                    <a href="./message.html">给我留言</a>
+                    <a href="./message.html" data-i18n="nav.message">给我留言</a>
                 </li>
             </ul>
         </div>
@@ -47,64 +63,64 @@
             <img src="./images/banner2.png" alt="">
         </div>
         <div id="message">
-            <h1>
+            <h1 data-i18n="message.title">
                 给我留言
             </h1>
             <img class="liuytan" src="./images/liuyan.png" alt="">
             <form action="">
                 <ul>
                     <li>
-                        <p>
+                        <p data-i18n="message.name">
                             称呼：
                         </p>
                         <input class="input1" type="text">
                     </li>
                     <li>
-                        <p>
+                        <p data-i18n="message.telephone">
                             联系方式：
                         </p>
                         <input class="input1" t type="text">
                     </li>
                     <li>
-                        <p>性别：</p>
+                        <p data-i18n="message.sex">性别：</p>
                         <div>
                             <input type="radio" name="bb" id="man" checked>
-                            <label for="man">男</label>
+                            <label for="man" data-i18n="message.sex1">男</label>
                             <input type="radio" name="bb" id="woman">
-                            <label for="woman">女</label>
+                            <label for="woman" data-i18n="message.sex2">女</label>
                         </div>
                     </li>
                     <li>
-                        <p>喜欢的品种：</p>
+                        <p data-i18n="message.like">喜欢的品种：</p>
                         <div>
                             <SELECT class="input1" id="idState">
-                                <OPTION value="0">金毛</OPTION>
-                                <OPTION value="1">松狮</OPTION>
-                                <OPTION value="2">泰迪</OPTION>
-                                <OPTION value="3">德牧</OPTION>
-                                <OPTION value="4">哈士奇</OPTION>
-                                <OPTION value="5">博美</OPTION>
-                                <OPTION value="6">比熊</OPTION>
-                                <OPTION value="7">拉布拉多</OPTION>
-                                <OPTION value="8">萨摩耶</OPTION>
+                                <OPTION value="0" data-i18n="message.variety1">金毛</OPTION>
+                                <OPTION value="1" data-i18n="message.variety2">松狮</OPTION>
+                                <OPTION value="2" data-i18n="message.variety3">泰迪</OPTION>
+                                <OPTION value="3" data-i18n="message.variety4">德牧</OPTION>
+                                <OPTION value="4" data-i18n="message.variety5">哈士奇</OPTION>
+                                <OPTION value="5" data-i18n="message.variety6">博美</OPTION>
+                                <OPTION value="6" data-i18n="message.variety7">比熊</OPTION>
+                                <OPTION value="7" data-i18n="message.variety8">拉布拉多</OPTION>
+                                <OPTION value="8" data-i18n="message.variety9">萨摩耶</OPTION>
                             </SELECT>
                         </div>
                     </li>
                     <li>
-                        <p>留言：</p>
+                        <p data-i18n="message.remain">留言：</p>
                         <textarea name="" id="" cols="30" rows="10"></textarea>
                     </li>
                     <li>
-                        <button>发送</button>
+                        <button data-i18n="message.up">发送</button>
                     </li>
                 </ul>
             </form>
         </div>
         <div id="footer">
-            <p>版权所有</p>
+            <p data-i18n="all.footer">版权所有</p>
         </div>
     </div>
-
+    <script src="./javascipt/中英切换.js"></script>
 </body>
 
 </html>
